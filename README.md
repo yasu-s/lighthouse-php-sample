@@ -35,3 +35,6 @@ cp .env.example .env
 alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
 ```
 
+## 挙動確認
+
+- http://localhost/graphiql
