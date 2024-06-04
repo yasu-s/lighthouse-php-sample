@@ -25,7 +25,7 @@ cp .env.example .env
 
 ```bash
 alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
-sail up
+sail up -d
 sail artisan migrate
 ```
 
