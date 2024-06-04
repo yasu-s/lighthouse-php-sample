@@ -17,6 +17,10 @@ docker run --rm \
     composer install --ignore-platform-reqs
 ```
 
+```bash
+cp .env.example .env
+```
+
 ### 起動
 
 ```bash
