@@ -26,6 +26,7 @@ cp .env.example .env
 ```bash
 ./vendor/bin/sail up -d
 ./vendor/bin/sail artisan migrate
+./vendor/bin/sail artisan db:seed --class=DatabaseSeeder
 ```
 
 ### エイリアス登録
