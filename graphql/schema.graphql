@@ -5,7 +5,8 @@ scalar Date @scalar(class: "Nuwave\\Lighthouse\\Schema\\Types\\Scalars\\Date")
 scalar DateTime @scalar(class: "Nuwave\\Lighthouse\\Schema\\Types\\Scalars\\DateTime")
 
 type Query {
-  users: [User!]! @all
+  users: [User!]! @paginate
+  user(id: ID @eq): User @find
 }
 
 type User {
