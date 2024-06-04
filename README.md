@@ -24,9 +24,13 @@ cp .env.example .env
 ### 起動
 
 ```bash
-alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
-sail up -d
-sail artisan migrate
+./vendor/bin/sail up -d
+./vendor/bin/sail artisan migrate
 ```
 
+### エイリアス登録
+
+```bash
+alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
+```
 
