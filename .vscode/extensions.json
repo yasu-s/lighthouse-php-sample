@@ -1,6 +1,7 @@
 {
   "recommendations": [
     "graphql.vscode-graphql",
-    "ms-azuretools.vscode-docker"
+    "ms-azuretools.vscode-docker",
+    "editorconfig.editorconfig"
   ]
 }
