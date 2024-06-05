@@ -7,7 +7,7 @@
       "command": "docker",
       "args": [
         "run", "--rm",
-        "-u", "$(id -u):$(id -g)",
+        "-u", { "value": "$(id -u):$(id -g)", "quoting": "weak" },
         "-v", "$(pwd):/var/www/html",
         "-w", "/var/www/html",
         "laravelsail/php83-composer:latest",
