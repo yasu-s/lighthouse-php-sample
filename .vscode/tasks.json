@@ -1,0 +1,36 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "init",
+      "type": "shell",
+      "command": "docker",
+      "args": [
+        "run", "--rm",
+        "-u", "$(id -u):$(id -g)",
+        "-v", "$(pwd):/var/www/html",
+        "-w", "/var/www/html",
+        "laravelsail/php83-composer:latest",
+        "composer", "install", "--ignore-platform-reqs"
+      ]
+    },
+    {
+      "label": "sail-up",
+      "type": "shell",
+      "command": "./vendor/bin/sail",
+      "args": ["up"]
+    },
+    {
+      "label": "sail-artisan-migrate",
+      "type": "shell",
+      "command": "./vendor/bin/sail",
+      "args": ["artisan", "migrate"]
+    },
+    {
+      "label": "sail-artisan-seed",
+      "type": "shell",
+      "command": "./vendor/bin/sail",
+      "args": ["artisan", "db:seed", "--class=DatabaseSeeder"]
+    }
+  ]
+}
