@@ -1,5 +1,8 @@
 type Comment {
   id: ID!
   reply: String!
+  created_at: DateTime!
+  updated_at: DateTime!
+
   post: Post! @belongsTo
 }
