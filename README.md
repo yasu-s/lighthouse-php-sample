@@ -38,3 +38,8 @@ alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
 ## 挙動確認
 
 - http://localhost/graphiql
+
+## 参考URL
+
+- https://laravel.com/docs/master/sail
+- https://lighthouse-php.com/
