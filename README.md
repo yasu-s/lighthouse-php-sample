@@ -1,5 +1,9 @@
 # lighthouse-php-sample
 
+## 概要
+
+- LighthousePHPのサンプル
+
 ## 環境
 
 - Docker
