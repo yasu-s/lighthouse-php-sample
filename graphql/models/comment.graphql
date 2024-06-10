@@ -1,8 +1,9 @@
-extend type Mutation {
+type Mutation {
   "Comment追加"
   createComment(input: CreateCommentInput! @spread): Comment @create
 }
 
+"Post -> コメント"
 type Comment {
   id: ID!
   reply: String!

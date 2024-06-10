@@ -8,6 +8,7 @@ extend type Mutation {
   createPost(input: CreatePostInput! @spread): Post @create
 }
 
+"投稿"
 type Post {
   id: ID!
   "タイトル"

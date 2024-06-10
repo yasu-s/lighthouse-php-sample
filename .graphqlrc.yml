@@ -1,4 +1,5 @@
 schema:
   - schema-directives.graphql
   - graphql/scalar.graphql
+  - graphql/schema.graphql
   - graphql/models/*.graphql

@@ -1,6 +1,9 @@
-#import scalar.graphql
-#import models/*.graphql
-
 type Query {
   me: User @auth
 }
+
+# type Mutation {
+# }
+
+#import scalar.graphql
+#import models/*.graphql
